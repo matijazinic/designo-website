@@ -4,17 +4,17 @@ export default function LocationBlobs() {
   const data = [
     {
       country: "Canada",
-      href: "/locations",
+      href: "/locations/#canada",
       image: "/assets/shared/desktop/illustration-canada.svg",
     },
     {
       country: "Australia",
-      href: "/locations",
+      href: "/locations/#australia",
       image: "/assets/shared/desktop/illustration-australia.svg",
     },
     {
       country: "United Kingdom",
-      href: "/locations",
+      href: "/locations/#united-kingdom",
       image: "/assets/shared/desktop/illustration-united-kingdom.svg",
     },
   ];

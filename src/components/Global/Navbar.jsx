@@ -8,7 +8,7 @@ export default function Navbar() {
       <div>
         <a href="/">
           <img
-            src="./assets/shared/desktop/logo-dark.png"
+            src="/assets/shared/desktop/logo-dark.png"
             className="object-cover h-[27px]"
           />
         </a>

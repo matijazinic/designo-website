@@ -4,6 +4,7 @@ export default function Locations() {
   const data = [
     {
       country: "Canada",
+      id: "canada",
       title: "Designo Central Office",
       addressLine1: "3886 Wellington Street",
       addressLine2: "Toronto, Ontario M9C 3J5",
@@ -13,6 +14,7 @@ export default function Locations() {
     },
     {
       country: "Australia",
+      id: "australia",
       title: "Designo AU Office",
       addressLine1: "19 Balonne Street",
       addressLine2: "New South Wales 2443",
@@ -22,6 +24,7 @@ export default function Locations() {
     },
     {
       country: "United Kingdom",
+      id: "united-kingdom",
       title: "Designo UK Office",
       addressLine1: "13 Colorado Way",
       addressLine2: "Rhyd-y-fro SA8 9GA",
@@ -32,7 +35,10 @@ export default function Locations() {
   ];
   return data.map((item) => {
     return (
-      <div className="locations sm:rounded-lg lg:grid lg:gap-4 xl:gap-8">
+      <div
+        className="locations sm:rounded-lg lg:grid lg:gap-4 xl:gap-8"
+        id={item.id}
+      >
         <img
           className="w-full object-cover max-h-[320px] lg:h-full lg:max-h-full sm:rounded-tr-lg sm:rounded-tl-lg md:rounded-br-lg md:rounded-bl-lg order-2"
           src={item.image}

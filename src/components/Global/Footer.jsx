@@ -8,7 +8,7 @@ export default function Footer() {
         <div className="flex flex-col max-md:items-center lg:items-center md:flex-row md:justify-between ">
           <a href="/">
             <img
-              src="./assets/shared/desktop/logo-light.png"
+              src="/assets/shared/desktop/logo-light.png"
               className="object-cover h-[27px]"
             />
           </a>
