@@ -4,7 +4,7 @@ export default function Navbar() {
   const [mobileOpen, setMobileOpen] = useState(false);
   const hamburgerLine = `h-1 w-8 my-1 rounded-full bg-black transition ease transform duration-300`;
   return (
-    <nav className="py-16 px-4 sm:px-0 flex flex-row items-center justify-between relative">
+    <nav className="py-10 lg:py-16 px-4 sm:px-0 flex flex-row items-center justify-between relative">
       <div>
         <a href="/">
           <img
@@ -40,26 +40,34 @@ export default function Navbar() {
       <div
         className={`${
           mobileOpen ? "flex" : "hidden"
-        } absolute md:relative top-32 right-0 w-full md:w-auto md:inset-0 shadow-xl md:shadow-none rounded-lg md:rounded-none  bg-white p-10 md:p-0 md:flex flex-col md:flex-row gap-10`}
+        } absolute md:relative top-28 right-0 w-full md:w-auto md:inset-0 shadow-xl md:shadow-none rounded-lg md:rounded-none  bg-white p-10 md:p-0 md:flex flex-col md:flex-row gap-10`}
       >
-        <a
-          href="/about"
-          className="uppercase text-sm tracking-[2px] hover:underline hover:decoration-slate-400 hover:underline-offset-4"
-        >
-          Our Company
-        </a>
-        <a
-          href="#"
-          className="uppercase text-sm tracking-[2px] hover:underline hover:decoration-slate-400 hover:underline-offset-4"
-        >
-          Locations
-        </a>
-        <a
-          href="#"
-          className="uppercase text-sm tracking-[2px] hover:underline hover:decoration-slate-400 hover:underline-offset-4"
-        >
-          Contact
-        </a>
+        <ul className="flex flex-col md:flex-row gap-10">
+          <li>
+            <a
+              href="/about"
+              className="uppercase text-sm tracking-[2px] hover:underline hover:underline-offset-2"
+            >
+              Our Company
+            </a>
+          </li>
+          <li>
+            <a
+              href="/locations"
+              className="uppercase text-sm tracking-[2px] hover:underline hover:underline-offset-2"
+            >
+              Locations
+            </a>
+          </li>
+          <li>
+            <a
+              href="/contact"
+              className="uppercase text-sm tracking-[2px] hover:underline hover:underline-offset-2"
+            >
+              Contact
+            </a>
+          </li>
+        </ul>
       </div>
     </nav>
   );

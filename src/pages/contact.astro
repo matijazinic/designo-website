@@ -1,0 +1,15 @@
+---
+import Contact from "../components/Contact/Contact";
+import LocationBlobs from "../components/Global/LocationBlobs";
+import Layout from "../layouts/Layout.astro";
+
+---
+
+<Layout title="Designo - Our Locations">
+	<section class="bg-hero-pattern bg-cover bg-[#E7816B] bg-right lg:min-h-[640px] grid grid-cols-1 lg:grid-cols-2 sm:rounded-xl lg:mt-10">
+		<Contact />
+	</section>
+    <section class="flex flex-col gap-20 mt-28 sm:mt-40 lg:grid lg:grid-cols-3 relative z-20 bg-white -mx-[200rem] px-[200rem] pb-32 lg:pb-40">
+		<LocationBlobs />
+	</section>
+</Layout>

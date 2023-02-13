@@ -1,11 +1,27 @@
 ---
+import Hero from '../components/About/Hero';
+import TheRealDeal from '../components/About/TheRealDeal';
+import WorldClassTalent from '../components/About/WorldClassTalent';
+import ContactCTA from '../components/Global/ContactCTA';
+import LocationBlobs from '../components/Global/LocationBlobs';
 import Layout from '../layouts/Layout.astro';
-import Card from '../components/Card.astro';
 ---
 
-<Layout title="Welcome to Astro.">
-	<section>
-		
+<Layout title="Designo - About our company">
+	<section class="bg-[#E7816B] sm:rounded-xl lg:mt-10">
+		<Hero />
+	</section>
+	<section class="bg-[#fdf3f0] sm-rounded-xl sm:mt-32">
+		<WorldClassTalent />
+	</section>
+	<section class="flex flex-col gap-20 mt-28 sm:mt-40 lg:grid lg:grid-cols-3">
+		<LocationBlobs />
+	</section>
+	<section class="bg-[#fdf3f0] mt-28 sm-rounded-xl sm:mt-40">
+		<TheRealDeal />
+	</section>
+	<section class="px-8 sm:px-0 mt-24 md:mt-[10rem] relative z-10">
+		<ContactCTA />
 	</section>
 </Layout>
 
