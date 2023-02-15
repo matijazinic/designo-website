@@ -16,7 +16,7 @@ export default function Hero() {
           src="/assets/about/desktop/image-about-hero.jpg"
           className="w-full max-h-[480px] object-cover hidden lg:block lg:order-2 rounded-tr-lg rounded-br-lg"
         />
-        <div className="text-center text-white py-12 sm:px-12 md:py-10 px-6 md:px-16 xl:px-24 bg-[url(/assets/about/mobile/bg-pattern-hero-about-mobile.svg)] lg:text-left my-auto md:rounded-br-lg md:rounded-bl-lg min-h-[480px] sm:min-h-[300px] flex flex-col items-center justify-center lg:items-start lg:gap-8">
+        <div className="text-center text-white py-20 sm:px-12 md:py-10 px-6 md:px-16 xl:px-24 bg-[url(/assets/about/mobile/bg-pattern-hero-about-mobile.svg)] lg:text-left my-auto md:rounded-br-lg md:rounded-bl-lg flex flex-col items-center justify-center lg:items-start lg:gap-8">
           <h1 className="text-3xl sm:text-4xl font-medium mb-8 md:text-5xl">
             About Us
           </h1>

@@ -1,15 +1,10 @@
 import React from "react";
 
-export default function Design({ title, imageName, href }) {
-  return (
-    <div
-      className="bg-cover text-white rounded-lg uppercase first:lg:row-span-2 first:lg:h-full first:lg:bg-[url(/assets/home/desktop/image-web-design-large.jpg)]"
-      style={{
-        backgroundImage: `url(/assets/home/desktop/image-${imageName}.jpg`,
-      }}
-    >
+export default function Design({ isBig, title, imageName, href }) {
+  const Content = () => {
+    return (
       <a
-        href={`/${href}`}
+        href={`/projects/${href}`}
         className="h-full w-full py-20 md:py-12 lg:py-20 xl:py-32 px-8 my-auto bg-black/70 rounded-lg hover:bg-[#E7816B]/70 flex flex-col justify-center items-center transition-all"
       >
         <h2 className="tracking-[1.4px] md:tracking-[2px] text-3xl md:text-4xl xl:text-5xl text-center font-medium">
@@ -34,6 +29,33 @@ export default function Design({ title, imageName, href }) {
           </svg>
         </div>
       </a>
-    </div>
-  );
+    );
+  };
+
+  const BigSection = () => {
+    return (
+      <div
+        className="bg-cover text-white rounded-lg uppercase lg:row-span-2 lg:h-full"
+        style={{
+          backgroundImage: `url(/assets/home/desktop/image-${imageName}.jpg`,
+        }}
+      >
+        <Content />
+      </div>
+    );
+  };
+
+  const NormalSection = () => {
+    return (
+      <div
+        className="bg-cover text-white rounded-lg uppercase"
+        style={{
+          backgroundImage: `url(/assets/home/desktop/image-${imageName}.jpg`,
+        }}
+      >
+        <Content />
+      </div>
+    );
+  };
+  return isBig ? <BigSection /> : <NormalSection />;
 }

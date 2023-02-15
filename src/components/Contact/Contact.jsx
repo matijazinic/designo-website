@@ -3,7 +3,7 @@ import React from "react";
 export default function Contact() {
   return (
     <>
-      <div className="text-center text-white py-12 sm:px-12 md:py-10 px-6 md:px-16 xl:px-24 bg-[url(/assets/about/mobile/bg-pattern-hero-about-mobile.svg)] lg:text-left my-auto md:rounded-br-lg md:rounded-bl-lg min-h-[480px] sm:min-h-[300px] flex flex-col items-center justify-center lg:items-start lg:gap-8">
+      <div className="text-center text-white py-20 sm:px-12 md:py-10 px-6 md:px-16 xl:px-24 bg-[url(/assets/about/mobile/bg-pattern-hero-about-mobile.svg)] lg:text-left my-auto md:rounded-br-lg md:rounded-bl-lg sm:min-h-[300px] flex flex-col items-center justify-center lg:items-start lg:gap-8">
         <h1 className="text-3xl sm:text-4xl font-medium mb-8 md:text-5xl">
           Contact Us
         </h1>
@@ -28,7 +28,7 @@ export default function Contact() {
           </div>
           <div class="w-full mb-4">
             <input
-              type="text"
+              type="email"
               name="email"
               id="email"
               className="h-16 block py-3 px-6 w-full text-sm text-white bg-transparent border-0 border-b-[1px] border-gray-300 appearance-none focus:outline-none focus:ring-0 focus:white focus:border-b-4 peer placeholder:text-white/50 "

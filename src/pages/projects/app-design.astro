@@ -1,0 +1,26 @@
+---
+import DesignPage from "../../components/Design/DesignPage";
+import Hero from "../../components/Design/Hero";
+import Projects from "../../components/Design/Projects";
+import ContactCTA from "../../components/Global/ContactCTA";
+import Design from "../../components/Global/Design";
+import Layout from "../../layouts/Layout.astro";
+import { appDesign } from "../../projects";
+
+---
+
+<Layout title="Designo - App Design Projects">
+	<section class="bg-[#E7816B] sm:rounded-xl lg:mt-10">
+		<Hero title="App Design" description="Our mobile designs bring intuitive digital solutions to your customers right at their fingertips."/>
+	</section>
+	<section class="mt-10 md:mt-32 lg:mt-20 lg:grid lg:grid-cols-3 gap-8 lg:gap-12">
+		<Projects data={appDesign} />
+	</section>
+	<section class="px-8 flex flex-col gap-10 mt-24 lg:grid lg:grid-cols-2 bg-white">
+		<Design isBig={false} title="Web Design" imageName="web-design-small" href="web-design"/>
+		<Design isBig={false} title="Graphic Design" imageName="graphic-design" href="graphic-design"/>
+	</section>
+	<section class="px-4 sm:px-0 mt-24 md:mt-32 relative z-10">
+		<ContactCTA />
+	</section>
+</Layout>

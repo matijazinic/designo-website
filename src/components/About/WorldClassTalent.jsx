@@ -15,7 +15,7 @@ export default function WorldClassTalent() {
         src="/assets/about/desktop/image-world-class-talent.jpg"
         className="w-full lg:h-[640px] object-cover hidden lg:block rounded-tr-lg rounded-br-lg"
       />
-      <div className="text-center  py-12 md:py-20 px-6 sm:px-12 md:px-16 xl:px-24 lg:text-left my-auto md:rounded-br-lg md:rounded-bl-lg min-h-[480px] sm:min-h-[300px] flex flex-col items-center justify-center lg:items-start lg:gap-8">
+      <div className="text-center  py-20 md:py-20 px-6 sm:px-12 md:px-16 xl:px-24 lg:text-left my-auto md:rounded-br-lg md:rounded-bl-lg min-h-[480px] sm:min-h-[300px] flex flex-col items-center justify-center lg:items-start lg:gap-8">
         <h1 className="text-3xl text-[#E7816B] sm:text-4xl lg:text-5xl font-medium mb-8">
           World Class Talent
         </h1>

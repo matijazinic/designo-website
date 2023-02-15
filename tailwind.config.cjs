@@ -8,6 +8,14 @@ module.exports = {
       fontFamily: {
         sans: ["Jost", ...defaultTheme.fontFamily.sans],
       },
+      fontSize: {
+        "5xl": [
+          "3rem",
+          {
+            lineHeight: "1.2",
+          },
+        ],
+      },
       backgroundImage: {
         "hero-pattern": "url('/assets/home/desktop/bg-pattern-hero-home.svg')",
         "web-design-small":
