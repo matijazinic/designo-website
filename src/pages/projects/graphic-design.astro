@@ -9,17 +9,17 @@ import { graphicDesign } from "../../projects";
 ---
 
 <Layout title="Designo - Graphic Design Projects">
-  <section class="bg-[#E7816B] sm:rounded-xl lg:mt-10">
+  <section class="lg:mt-10 container mx-auto px-4 lg:px-8">
 		<Hero title="Graphic Design" description="We deliver eye-catching branding materials that are tailored to meet your business objectives." />
 	</section>
-	<section class="mt-10 md:mt-32 lg:mt-20 lg:grid lg:grid-cols-3 gap-8 lg:gap-12">
+	<section class="mt-10 md:mt-32 lg:mt-20 lg:grid lg:grid-cols-3 gap-8 lg:gap-12 container mx-auto px-4 lg:px-8">
 		<Projects data={graphicDesign} />
 	  </section>
-	  <section class="px-8 flex flex-col gap-10 mt-24 lg:grid lg:grid-cols-2 bg-white">
+	  <section class="flex flex-col gap-10 mt-24 lg:grid lg:grid-cols-2 bg-white container mx-auto px-4 lg:px-8">
 		  <Design isBig={false} title="Web Design" imageName="web-design-small" href="web-design"/>
 			<Design isBig={false} title="App Design" imageName="app-design" href="app-design"/>
 		</section>
-	  <section class="px-4 sm:px-0 mt-24 md:mt-32 relative z-10">
+	  <section class="mt-24 md:mt-32 relative z-10 container mx-auto px-4 md:px-8">
 			<ContactCTA />
 		</section>
 </Layout>

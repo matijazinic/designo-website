@@ -1,66 +1,66 @@
 import React from "react";
+import { useForm } from "react-hook-form";
+import Form from "./Form";
 
 export default function Contact() {
+  const {
+    register,
+    handleSubmit,
+    formState: { errors, isSubmitted },
+  } = useForm({ mode: "onTouched" });
+  const onSubmit = (data) => {
+    console.log(data);
+  };
+
+  const displayError = (message) => {
+    return (
+      <div className="absolute right-0 top-[50%] translate-y-[-50%] flex flex-row gap-2">
+        <p role="alert" className="text-white text-sm italic">
+          {message}
+        </p>
+        <img className="h-5 w-5" src="/assets/contact/desktop/icon-error.svg" />
+      </div>
+    );
+  };
+
   return (
-    <>
+    <div className="bg-hero-pattern bg-cover bg-[#E7816B] lg:min-h-[600px] bg-right sm:rounded-xl grid grid-cols-1 lg:grid-cols-2">
       <div className="text-center text-white py-20 sm:px-12 md:py-10 px-6 md:px-16 xl:px-24 bg-[url(/assets/about/mobile/bg-pattern-hero-about-mobile.svg)] lg:text-left my-auto md:rounded-br-lg md:rounded-bl-lg sm:min-h-[300px] flex flex-col items-center justify-center lg:items-start lg:gap-8">
         <h1 className="text-3xl sm:text-4xl font-medium mb-8 md:text-5xl">
           Contact Us
         </h1>
-        <p className="text-base ">
+        <p className="text-base">
           Ready to take it to the next level? Let's talk about your project or
           idea and find out how we can help your business grow. If you are
           looking for unique digital experiences that's relatable to your users,
           drop us a line.
         </p>
       </div>
-      <div className="px-8 flex flex-col justify-center pb-16">
-        <form className="flex flex-col items-end">
-          <div class="w-full mb-4">
-            <input
-              type="text"
-              name="name"
-              id="name"
-              className="h-16 block py-3 px-6 w-full text-sm text-white bg-transparent border-0 border-b-[1px] border-gray-300 appearance-none focus:outline-none focus:ring-0 focus:white focus:border-b-4 peer placeholder:text-white/50 "
-              placeholder="Name"
-              required
-            />
-          </div>
-          <div class="w-full mb-4">
-            <input
-              type="email"
-              name="email"
-              id="email"
-              className="h-16 block py-3 px-6 w-full text-sm text-white bg-transparent border-0 border-b-[1px] border-gray-300 appearance-none focus:outline-none focus:ring-0 focus:white focus:border-b-4 peer placeholder:text-white/50 "
-              placeholder="Email address"
-              required
-            />
-          </div>
-          <div class="w-full mb-4">
-            <input
-              type="text"
-              name="phone"
-              id="phone"
-              className="h-16 block py-3 px-6 w-full text-sm text-white bg-transparent border-0 border-b-[1px] border-gray-300 appearance-none focus:outline-none focus:ring-0 focus:white focus:border-b-4 peer placeholder:text-white/50 "
-              placeholder="Phone number"
-              required
-            />
-          </div>
-          <div class="w-full mb-4">
-            <textarea
-              type="text"
-              name="message"
-              id="message"
-              className="h-32 block py-3 px-6 w-full text-sm text-white bg-transparent border-0 border-b-[1px] border-gray-300 appearance-none focus:outline-none focus:ring-0 focus:white focus:border-b-4 peer placeholder:text-white/50 "
-              placeholder="Your message"
-              required
-            />
-          </div>
-          <button className="bg-white text-[#1d1c1e] hover:text-white hover:bg-[#FFAD9B] px-12 py-4 transition-all rounded-md uppercase font-medium mt-8 mx-auto lg:mx-0">
-            Submit
-          </button>
-        </form>
+      <div className="px-8 flex flex-col justify-center pb-16 lg:py-16">
+        {isSubmitted ? (
+          <>
+            <div className="text-center pt-10">
+              <p className="text-white text-3xl">
+                Your message was sent successfully!
+              </p>
+              <a
+                href="/"
+                className="inline-block mt-6 bg-white text-[#1d1c1e] hover:text-white hover:bg-[#FFAD9B] px-8 py-4 transition-all rounded-md uppercase font-medium mx-auto lg:mx-0"
+              >
+                Go to homepage
+              </a>
+            </div>
+          </>
+        ) : (
+          <Form
+            register={register}
+            handleSubmit={handleSubmit}
+            errors={errors}
+            onSubmit={onSubmit}
+            displayError={displayError}
+          />
+        )}
       </div>
-    </>
+    </div>
   );
 }

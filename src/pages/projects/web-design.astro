@@ -10,17 +10,17 @@ import { webDesign } from "../../projects";
 ---
 
 <Layout title="Designo - Web Design Projects">
-  <section class="bg-[#E7816B] sm:rounded-xl lg:mt-10">
+  <section class="container mx-auto px-4 lg:px-8 lg:mt-10">
 		<Hero title="Web Design" description="We build websites that serve as powerful marketing tools and bring memorable brand experiences." />
 	</section>
-  <section class="mt-10 md:mt-32 lg:mt-20 lg:grid lg:grid-cols-3 gap-8 lg:gap-12">
+  <section class="mt-10 md:mt-32 lg:mt-20 lg:grid lg:grid-cols-3 gap-8 lg:gap-12 container mx-auto px-4 lg:px-8">
     <Projects data={webDesign} />
   </section>
-  <section class="px-8 flex flex-col gap-10 mt-24 lg:grid lg:grid-cols-2 bg-white">
+  <section class="flex flex-col gap-10 mt-24 lg:grid lg:grid-cols-2 bg-white container mx-auto px-4 lg:px-8">
 		<Design isBig={false} title="App Design" imageName="app-design" href="app-design"/>
 		<Design isBig={false} title="Graphic Design" imageName="graphic-design" href="graphic-design"/>
 	</section>
-  <section class="px-4 sm:px-0 mt-24 md:mt-32 relative z-10">
+  <section class="mt-24 md:mt-32 relative z-10 container mx-auto px-4 md:px-8">
 		<ContactCTA />
 	</section>
 </Layout>

@@ -7,18 +7,18 @@ import Layout from '../layouts/Layout.astro';
 ---
 
 <Layout title="Designo - Creative Web Agency">
-	<section class="bg-hero-pattern bg-cover bg-[#E7816B] bg-right lg:min-h-[640px] grid grid-cols-1 lg:grid-cols-2 sm:rounded-xl lg:mt-10 container mx-auto">
+	<section class="px-0 sm:px-4 lg:px-8 lg:min-h-[640px] lg:mt-10 container mx-auto">
 		<Hero />
 	</section>
-	<section class="flex flex-col gap-4 px-4 mt-20 md:mt-[10rem] lg:grid lg:grid-cols-2" id="projects">
+	<section class="flex flex-col gap-4 md:gap-8 lg:gap-4 px-4 lg:px-8 mt-20 md:mt-[10rem] lg:grid lg:grid-cols-2 container mx-auto" id="projects">
 		<Design isBig={true} title="Web Design" imageName="web-design-small" href="web-design"/>
 		<Design isBig={false} title="App Design" imageName="app-design" href="app-design"/>
 		<Design isBig={false} title="Graphic Design" imageName="graphic-design" href="graphic-design"/>
 	</section>
-	<section class="flex flex-col gap-20 px-8 md:px-4 mt-24 md:mt-[10rem] lg:grid lg:grid-cols-3">
+	<section class="flex flex-col gap-20 px-8 lg:px-12 md:px-4 mt-24 md:mt-[10rem] 2xl:mt-[12rem] lg:grid lg:grid-cols-3 container mx-auto">
 		<Workflow />
 	</section>
-	<section class="px-4 sm:px-0 mt-24 md:mt-[10rem] relative z-10">
+	<section class="px-4 lg:px-8 mt-24 md:mt-[10rem] relative z-10 container mx-auto">
 		<ContactCTA />
 	</section>
 </Layout>

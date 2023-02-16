@@ -3,7 +3,7 @@ import React from "react";
 export default function ContactCTA() {
   return (
     <>
-      <div className="bg-hero-pattern bg-cover bg-[#E7816B] bg-right rounded-lg text-white py-16 lg:py-20 xl:py-24 px-6 lg:px-16 xl:px-28 flex flex-col gap-10 lg:grid lg:grid-cols-2 lg:items-center">
+      <div className="bg-hero-pattern bg-cover bg-[#E7816B] bg-right rounded-lg text-white py-16 lg:py-20 xl:py-24 px-6 lg:px-16 xl:px-28 flex flex-col gap-10 md:gap-16 lg:grid lg:grid-cols-2 lg:items-center">
         <div className="md:px-20 lg:px-0 text-center lg:text-left">
           <h2 className="text-3xl font-medium md:text-4xl md:px-20 lg:px-0">
             Let's talk about your project

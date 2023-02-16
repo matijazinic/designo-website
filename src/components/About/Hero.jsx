@@ -2,7 +2,7 @@ import React from "react";
 
 export default function Hero() {
   return (
-    <>
+    <div className="bg-[#E7816B] sm:rounded-xl">
       <div className="lg:grid lg:grid-cols-[3fr_2fr] sm:rounded-lg">
         <img
           src="/assets/about/mobile/image-about-hero.jpg"
@@ -29,6 +29,6 @@ export default function Hero() {
           </p>
         </div>
       </div>
-    </>
+    </div>
   );
 }
