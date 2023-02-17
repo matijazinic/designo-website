@@ -31,7 +31,7 @@ export default function LocationBlobs() {
           </h2>
           <a
             href={item.href}
-            className="bg-[#E7816B] text-white hover:bg-[#FFAD9B] px-8 py-4 transition-all rounded-md uppercase font-medium max-w-[180px] mx-auto lg:mx-0"
+            className="bg-brand text-white hover:bg-[#FFAD9B] px-8 py-4 transition-all rounded-md uppercase font-medium max-w-[180px] mx-auto lg:mx-0"
           >
             See Location
           </a>

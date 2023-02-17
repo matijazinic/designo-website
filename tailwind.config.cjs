@@ -5,6 +5,10 @@ module.exports = {
   content: ["./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}"],
   theme: {
     extend: {
+      colors: {
+        brand: "#E7816B",
+        "brand-alt": "#FDF3F0",
+      },
       fontFamily: {
         sans: ["Jost", ...defaultTheme.fontFamily.sans],
       },

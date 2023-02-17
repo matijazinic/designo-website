@@ -4,8 +4,8 @@ import SocialIcons from "./SocialIcons";
 export default function Footer() {
   return (
     <>
-      <div className="bg-[#1D1C1E] -mt-20 pt-40 lg:pt-48 pb-20">
-        <div className="container mx-auto px-0 sm:px-4 md:px-8 lg:px-12 flex flex-col gap-10 text-white text-center md:text-left">
+      <div className="bg-[#1D1C1E] px-0 sm:px-4 md:px-8 lg:px-12 -mt-20 pt-40 lg:pt-48 pb-20 relative z-20">
+        <div className="container mx-auto flex flex-col gap-10 text-white text-center md:text-left">
           <div className="flex flex-col max-md:items-center lg:items-center md:flex-row md:justify-between ">
             <a href="/">
               <img

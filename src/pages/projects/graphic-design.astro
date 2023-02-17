@@ -1,5 +1,4 @@
 ---
-import DesignPage from "../../components/Design/DesignPage";
 import Hero from "../../components/Design/Hero";
 import Projects from "../../components/Design/Projects";
 import ContactCTA from "../../components/Global/ContactCTA";
@@ -9,17 +8,36 @@ import { graphicDesign } from "../../projects";
 ---
 
 <Layout title="Designo - Graphic Design Projects">
-  <section class="lg:mt-10 container mx-auto px-4 lg:px-8">
-		<Hero title="Graphic Design" description="We deliver eye-catching branding materials that are tailored to meet your business objectives." />
-	</section>
-	<section class="mt-10 md:mt-32 lg:mt-20 lg:grid lg:grid-cols-3 gap-8 lg:gap-12 container mx-auto px-4 lg:px-8">
-		<Projects data={graphicDesign} />
-	  </section>
-	  <section class="flex flex-col gap-10 mt-24 lg:grid lg:grid-cols-2 bg-white container mx-auto px-4 lg:px-8">
-		  <Design isBig={false} title="Web Design" imageName="web-design-small" href="web-design"/>
-			<Design isBig={false} title="App Design" imageName="app-design" href="app-design"/>
-		</section>
-	  <section class="mt-24 md:mt-32 relative z-10 container mx-auto px-4 md:px-8">
-			<ContactCTA />
-		</section>
+  <section class="lg:mt-10 px-4 lg:px-8">
+    <Hero
+      title="Graphic Design"
+      description="We deliver eye-catching branding materials that are tailored to meet your business objectives."
+    />
+  </section>
+  <section class="mt-10 md:mt-32 lg:mt-20 px-4 lg:px-8">
+    <div class="lg:grid lg:grid-cols-3 gap-10 lg:gap-16 container mx-auto">
+      <Projects data={graphicDesign} />
+    </div>
+  </section>
+  <section class="mt-24 bg-white px-4 lg:px-8">
+    <div
+      class="flex flex-col gap-10 lg:grid lg:grid-cols-2 px-8 sm:px-0 container mx-auto"
+    >
+      <Design
+        isBig={false}
+        title="Web Design"
+        imageName="web-design-small"
+        href="web-design"
+      />
+      <Design
+        isBig={false}
+        title="App Design"
+        imageName="app-design"
+        href="app-design"
+      />
+    </div>
+  </section>
+  <section class="mt-24 md:mt-32 relative z-10 px-4 md:px-8">
+    <ContactCTA />
+  </section>
 </Layout>

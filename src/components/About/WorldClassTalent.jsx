@@ -2,7 +2,7 @@ import React from "react";
 
 export default function WorldClassTalent() {
   return (
-    <div className="bg-[#fdf3f0] sm:rounded-xl">
+    <div className="bg-brand-alt sm:rounded-xl container mx-auto">
       <div className="lg:grid lg:grid-cols-[2fr_3fr] sm:rounded-lg">
         <img
           src="/assets/about/mobile/image-world-class-talent.jpg"
@@ -17,7 +17,7 @@ export default function WorldClassTalent() {
           className="w-full lg:h-[640px] object-cover hidden lg:block rounded-tl-lg rounded-bl-lg"
         />
         <div className="text-center  py-20 md:py-20 px-6 sm:px-12 md:px-16 xl:px-24 lg:text-left my-auto md:rounded-br-lg md:rounded-bl-lg min-h-[480px] sm:min-h-[300px] flex flex-col items-center justify-center lg:items-start lg:gap-8">
-          <h1 className="text-3xl text-[#E7816B] sm:text-4xl lg:text-5xl font-medium mb-8">
+          <h1 className="text-3xl text-brand sm:text-4xl lg:text-5xl font-medium mb-8">
             World Class Talent
           </h1>
           <p className="text-base ">

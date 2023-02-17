@@ -5,7 +5,7 @@ export default function Design({ isBig, title, imageName, href }) {
     return (
       <a
         href={`/projects/${href}`}
-        className="h-full w-full py-20 md:py-12 lg:py-20 xl:py-24 px-8 my-auto bg-black/70 rounded-lg hover:bg-[#E7816B]/70 flex flex-col justify-center items-center transition-all"
+        className="h-full w-full py-20 md:py-12 lg:py-20 xl:py-24 px-8 my-auto bg-black/70 rounded-lg hover:bg-brand/70 flex flex-col justify-center items-center transition-all"
       >
         <h2 className="tracking-[1.4px] md:tracking-[2px] text-3xl md:text-4xl xl:text-5xl text-center font-medium">
           {title}

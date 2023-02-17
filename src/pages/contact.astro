@@ -2,16 +2,23 @@
 import Contact from "../components/Contact/Contact";
 import LocationBlobs from "../components/Global/LocationBlobs";
 import Layout from "../layouts/Layout.astro";
-
 ---
 
 <Layout title="Designo - Contact Us">
-	<section class="lg:min-h-[640px] sm:rounded-xl lg:mt-10 container mx-auto px-0 sm:px-4 lg:px-8">
-		<Contact client:load />
-	</section>
-    <section class=" relative z-20 bg-white pb-32 lg:pb-40 px-0 sm:px-4 lg:px-8">
-		<div class="flex flex-col gap-20 mt-28 sm:mt-40 lg:grid lg:grid-cols-3 container mx-auto">
-			<LocationBlobs />
-		</div>
-	</section>
+  <section class="lg:min-h-[640px] sm:rounded-xl lg:mt-10 px-0 sm:px-4 lg:px-8">
+    <Contact client:load />
+  </section>
+  <section
+    class="relative z-30 isolate bg-white pb-32 lg:pb-40 px-0 sm:px-4 lg:px-8"
+  >
+    <div
+      class="flex flex-col gap-20 mt-28 sm:mt-40 lg:grid lg:grid-cols-3 container mx-auto"
+    >
+      <LocationBlobs />
+    </div>
+    <div
+      class="hidden lg:block bg-[url(/assets/shared/desktop/bg-pattern-leaf.svg)] h-[594px] w-[1006px] absolute bg-cover right-0 bottom-0 -z-10"
+    >
+    </div>
+  </section>
 </Layout>

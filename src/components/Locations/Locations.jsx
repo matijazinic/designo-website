@@ -43,8 +43,8 @@ export default function Locations() {
           className="w-full object-cover max-h-[320px] lg:h-full lg:max-h-full sm:rounded-tr-lg sm:rounded-tl-lg md:rounded-br-lg md:rounded-bl-lg order-2"
           src={item.image}
         />
-        <div className="py-16 px-10 flex flex-col justify-center items-center text-center gap-6 bg-[#fdf3f0] sm:rounded-lg md:mt-8 lg:mt-0 md:items-start md:text-left md:px-20 lg:py-28 lg:gap-10">
-          <h2 className="text-3xl md:text-4xl xl:text-5xl text-[#E7816B]">
+        <div className="py-16 px-10 flex flex-col justify-center items-center text-center gap-6 bg-brand-alt sm:rounded-lg md:mt-8 lg:mt-0 md:items-start md:text-left md:px-20 lg:py-28 lg:gap-10">
+          <h2 className="text-3xl md:text-4xl xl:text-5xl text-brand">
             {item.country}
           </h2>
           <div className="flex flex-col gap-6 md:grid md:grid-cols-2 md:w-full">

@@ -1,27 +1,36 @@
 ---
-import Hero from '../components/About/Hero';
-import TheRealDeal from '../components/About/TheRealDeal';
-import WorldClassTalent from '../components/About/WorldClassTalent';
-import ContactCTA from '../components/Global/ContactCTA';
-import LocationBlobs from '../components/Global/LocationBlobs';
-import Layout from '../layouts/Layout.astro';
+import Hero from "../components/About/Hero";
+import TheRealDeal from "../components/About/TheRealDeal";
+import WorldClassTalent from "../components/About/WorldClassTalent";
+import ContactCTA from "../components/Global/ContactCTA";
+import LocationBlobs from "../components/Global/LocationBlobs";
+import Layout from "../layouts/Layout.astro";
 ---
 
 <Layout title="Designo - About our company">
-	<section class=" lg:mt-10 container mx-auto px-0 sm:px-4 lg:px-8">
-		<Hero />
-	</section>
-	<section class=" sm:mt-32 container mx-auto px-0 sm:px-4 lg:px-8">
-		<WorldClassTalent />
-	</section>
-	<section class="flex flex-col gap-20 mt-28 sm:mt-40 lg:mt-[12rem] lg:grid lg:grid-cols-3 container mx-auto px-0 sm:px-4 lg:px-8">
-		<LocationBlobs />
-	</section>
-	<section class="mt-28 sm:mt-40 container mx-auto px-0 sm:px-4 lg:px-8">
-		<TheRealDeal />
-	</section>
-	<section class="mt-24 md:mt-[8rem] relative z-10 container mx-auto px-4 lg:px-8">
-		<ContactCTA />
-	</section>
+  <section class="lg:mt-10 px-0 sm:px-4 lg:px-8 relative">
+    <Hero />
+    <div
+      class="hidden lg:block bg-[url(/assets/shared/desktop/bg-pattern-leaf.svg)] h-[594px] w-[1006px] absolute bg-cover left-0 top-[300px] -z-10"
+    >
+    </div>
+  </section>
+  <section class="sm:mt-32 px-0 sm:px-4 lg:px-8">
+    <WorldClassTalent />
+  </section>
+  <section class="mt-28 sm:mt-40 lg:mt-[12rem] px-0 sm:px-4 lg:px-8 relative">
+    <div class="flex flex-col gap-10 lg:grid lg:grid-cols-3 container mx-auto">
+      <LocationBlobs />
+    </div>
+    <div
+      class="hidden lg:block bg-[url(/assets/shared/desktop/bg-pattern-leaf.svg)] h-[594px] w-[1006px] absolute bg-cover right-0 top-[150px] -scale-100 -z-10"
+    >
+    </div>
+  </section>
+  <section class="mt-28 sm:mt-40 px-0 sm:px-4 lg:px-8">
+    <TheRealDeal />
+  </section>
+  <section class="mt-24 md:mt-[8rem] relative z-10 px-4 lg:px-8">
+    <ContactCTA />
+  </section>
 </Layout>
-
