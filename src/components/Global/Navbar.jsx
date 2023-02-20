@@ -9,7 +9,7 @@ export default function Navbar() {
         <div>
           <a href="/designo-website/">
             <img
-              src="/assets/shared/desktop/logo-dark.png"
+              src="/designo-website/assets/shared/desktop/logo-dark.png"
               className="object-cover h-[27px]"
             />
           </a>

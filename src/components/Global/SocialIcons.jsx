@@ -6,35 +6,35 @@ export default function SocialIcons() {
       <a href="#">
         <img
           className="h-6 w-6 transition-all hover:brightness-125"
-          src="/assets/shared/desktop/icon-facebook.svg"
+          src="/designo-website/assets/shared/desktop/icon-facebook.svg"
           alt="Facebook icon"
         />
       </a>
       <a href="#">
         <img
           className="h-6 w-6 transition-all hover:brightness-125"
-          src="/assets/shared/desktop/icon-youtube.svg"
+          src="/designo-website/assets/shared/desktop/icon-youtube.svg"
           alt="Youtube icon"
         />
       </a>
       <a href="#">
         <img
           className="h-6 w-6 transition-all hover:brightness-125"
-          src="/assets/shared/desktop/icon-twitter.svg"
+          src="/designo-website/assets/shared/desktop/icon-twitter.svg"
           alt="Twitter icon"
         />
       </a>
       <a href="#">
         <img
           className="h-6 w-6 transition-all hover:brightness-125"
-          src="/assets/shared/desktop/icon-pinterest.svg"
+          src="/designo-website/assets/shared/desktop/icon-pinterest.svg"
           alt="Pinterest icon"
         />
       </a>
       <a href="#">
         <img
           className="h-6 w-6 transition-all hover:brightness-125"
-          src="/assets/shared/desktop/icon-instagram.svg"
+          src="/designo-website/assets/shared/desktop/icon-instagram.svg"
           alt="Instagram icon"
         />
       </a>

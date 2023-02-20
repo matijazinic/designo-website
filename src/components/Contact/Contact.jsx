@@ -18,14 +18,17 @@ export default function Contact() {
         <p role="alert" className="text-white text-sm italic">
           {message}
         </p>
-        <img className="h-5 w-5" src="/assets/contact/desktop/icon-error.svg" />
+        <img
+          className="h-5 w-5"
+          src="/designo-website/assets/contact/desktop/icon-error.svg"
+        />
       </div>
     );
   };
 
   return (
     <div className="bg-hero-pattern bg-cover bg-brand lg:min-h-[600px] bg-right sm:rounded-xl grid grid-cols-1 lg:grid-cols-2 container mx-auto">
-      <div className="text-center text-white py-20 sm:px-12 md:py-10 px-6 md:px-16 xl:px-24 bg-[url(/assets/about/mobile/bg-pattern-hero-about-mobile.svg)] lg:text-left my-auto md:rounded-br-lg md:rounded-bl-lg sm:min-h-[300px] flex flex-col items-center justify-center lg:items-start lg:gap-8">
+      <div className="text-center text-white py-20 sm:px-12 md:py-10 px-6 md:px-16 xl:px-24 bg-[url(/designo-website/assets/about/mobile/bg-pattern-hero-about-mobile.svg)] lg:text-left my-auto md:rounded-br-lg md:rounded-bl-lg sm:min-h-[300px] flex flex-col items-center justify-center lg:items-start lg:gap-8">
         <h1 className="text-3xl sm:text-4xl font-medium mb-8 md:text-5xl">
           Contact Us
         </h1>

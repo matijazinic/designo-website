@@ -21,7 +21,7 @@ export default function Hero() {
       </div>
       <div className="max-h-[640px] md:mx-auto overflow-hidden">
         <img
-          src="/assets/home/desktop/image-hero-phone.png"
+          src="/designo-website/assets/home/desktop/image-hero-phone.png"
           className="mt-24 sm:mt-16 lg:mt-32 xl:mt-10 scale-150 sm:scale-125 xl:scale-110 2xl:scale-100 2xl:ml-12"
         />
       </div>

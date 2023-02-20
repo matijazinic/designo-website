@@ -37,7 +37,7 @@ export default function Design({ isBig, title, imageName, href }) {
       <div
         className="bg-cover text-white rounded-lg uppercase lg:row-span-2 lg:h-full"
         style={{
-          backgroundImage: `url(/assets/home/desktop/image-${imageName}.jpg`,
+          backgroundImage: `url(/designo-website/assets/home/desktop/image-${imageName}.jpg`,
         }}
       >
         <Content />
@@ -50,7 +50,7 @@ export default function Design({ isBig, title, imageName, href }) {
       <div
         className="bg-cover text-white rounded-lg uppercase"
         style={{
-          backgroundImage: `url(/assets/home/desktop/image-${imageName}.jpg`,
+          backgroundImage: `url(/designo-website/assets/home/desktop/image-${imageName}.jpg`,
         }}
       >
         <Content />

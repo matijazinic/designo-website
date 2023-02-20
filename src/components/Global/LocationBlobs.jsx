@@ -5,17 +5,19 @@ export default function LocationBlobs() {
     {
       country: "Canada",
       href: "/locations/#canada",
-      image: "/assets/shared/desktop/illustration-canada.svg",
+      image: "/designo-website/assets/shared/desktop/illustration-canada.svg",
     },
     {
       country: "Australia",
       href: "/locations/#australia",
-      image: "/assets/shared/desktop/illustration-australia.svg",
+      image:
+        "/designo-website/assets/shared/desktop/illustration-australia.svg",
     },
     {
       country: "United Kingdom",
       href: "/locations/#united-kingdom",
-      image: "/assets/shared/desktop/illustration-united-kingdom.svg",
+      image:
+        "/designo-website/assets/shared/desktop/illustration-united-kingdom.svg",
     },
   ];
   return data.map((item) => {
