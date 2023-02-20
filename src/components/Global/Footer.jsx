@@ -4,10 +4,10 @@ import SocialIcons from "./SocialIcons";
 export default function Footer() {
   return (
     <>
-      <div className="bg-[#1D1C1E] px-0 sm:px-4 md:px-8 lg:px-12 -mt-20 pt-40 lg:pt-48 pb-20 relative z-20">
+      <div className="bg-[#1D1C1E] px-0 sm:px-4 md:px-8 lg:px-12 -mt-20 pt-40 lg:pt-48 pb-20 relative">
         <div className="container mx-auto flex flex-col gap-10 text-white text-center md:text-left">
           <div className="flex flex-col max-md:items-center lg:items-center md:flex-row md:justify-between ">
-            <a href="/">
+            <a href="/designo-website/">
               <img
                 src="/assets/shared/desktop/logo-light.png"
                 className="object-cover h-[27px]"
@@ -19,7 +19,7 @@ export default function Footer() {
                 <ul className="flex flex-col md:flex-row gap-10">
                   <li>
                     <a
-                      href="/about"
+                      href="/designo-website/about"
                       className="uppercase text-sm tracking-[2px] hover:underline hover:underline-offset-2"
                     >
                       Our Company
@@ -27,7 +27,7 @@ export default function Footer() {
                   </li>
                   <li>
                     <a
-                      href="/locations"
+                      href="/designo-website/locations"
                       className="uppercase text-sm tracking-[2px] hover:underline hover:underline-offset-2"
                     >
                       Locations
@@ -35,7 +35,7 @@ export default function Footer() {
                   </li>
                   <li>
                     <a
-                      href="/contact"
+                      href="/designo-website/contact"
                       className="uppercase text-sm tracking-[2px] hover:underline hover:underline-offset-2"
                     >
                       Contact

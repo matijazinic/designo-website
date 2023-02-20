@@ -7,7 +7,7 @@ export default function Navbar() {
     <nav className="py-8 sm:pb-10 md:py-12 lg:py-16 px-4 lg:px-8 relative">
       <div className="container mx-auto flex flex-row items-center justify-between ">
         <div>
-          <a href="/">
+          <a href="/designo-website/">
             <img
               src="/assets/shared/desktop/logo-dark.png"
               className="object-cover h-[27px]"
@@ -46,7 +46,7 @@ export default function Navbar() {
           <ul className="flex flex-col md:flex-row gap-10">
             <li>
               <a
-                href="/about"
+                href="/designo-website/about"
                 className="uppercase text-sm tracking-[2px] hover:underline hover:underline-offset-2"
               >
                 Our Company
@@ -54,7 +54,7 @@ export default function Navbar() {
             </li>
             <li>
               <a
-                href="/locations"
+                href="/designo-website/locations"
                 className="uppercase text-sm tracking-[2px] hover:underline hover:underline-offset-2"
               >
                 Locations
@@ -62,7 +62,7 @@ export default function Navbar() {
             </li>
             <li>
               <a
-                href="/contact"
+                href="/designo-website/contact"
                 className="uppercase text-sm tracking-[2px] hover:underline hover:underline-offset-2"
               >
                 Contact

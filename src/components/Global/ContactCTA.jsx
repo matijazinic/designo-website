@@ -15,7 +15,7 @@ export default function ContactCTA() {
         </div>
         <div className="text-center lg:text-right">
           <a
-            href="/contact"
+            href="/designo-website/contact"
             className="bg-white text-[#1d1c1e] hover:text-white hover:bg-[#FFAD9B] px-8 py-4 transition-all rounded-md uppercase font-medium max-w-[180px] mx-auto lg:mx-0"
           >
             Get in touch

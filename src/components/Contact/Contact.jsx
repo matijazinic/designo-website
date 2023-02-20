@@ -44,7 +44,7 @@ export default function Contact() {
                 Your message was sent successfully!
               </p>
               <a
-                href="/"
+                href="/designo-website/"
                 className="inline-block mt-6 bg-white text-[#1d1c1e] hover:text-white hover:bg-[#FFAD9B] px-8 py-4 transition-all rounded-md uppercase font-medium mx-auto lg:mx-0"
               >
                 Go to homepage
