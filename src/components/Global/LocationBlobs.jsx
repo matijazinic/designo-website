@@ -4,18 +4,18 @@ export default function LocationBlobs() {
   const data = [
     {
       country: "Canada",
-      href: "/locations/#canada",
+      href: "/designo-website/locations/#canada",
       image: "/designo-website/assets/shared/desktop/illustration-canada.svg",
     },
     {
       country: "Australia",
-      href: "/locations/#australia",
+      href: "/designo-website/locations/#australia",
       image:
         "/designo-website/assets/shared/desktop/illustration-australia.svg",
     },
     {
       country: "United Kingdom",
-      href: "/locations/#united-kingdom",
+      href: "/designo-website/locations/#united-kingdom",
       image:
         "/designo-website/assets/shared/desktop/illustration-united-kingdom.svg",
     },
