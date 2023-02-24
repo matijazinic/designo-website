@@ -27,7 +27,10 @@ export default function Workflow() {
       <div className="text-center md:text-left flex flex-col items-center justify-center gap-10 md:grid md:grid-cols-[1fr_2fr] lg:flex lg:text-center">
         <img
           src={item.image}
-          className="h-52 w-52 bg-gradient-to-r from-[#f0e8e8] to-[#fdfcfc] rounded-full mix-blend-normal bg-opacity-20 m"
+          className="h-52 w-52 bg-gradient-to-r from-[#f0e8e8] to-[#fdfcfc] rounded-full mix-blend-normal bg-opacity-20"
+          alt={`Image blob of ${
+            item.title.charAt(0).toUpperCase() + item.title.slice(1)
+          }`}
         />
         <div className="flex flex-col  gap-6">
           <h2 className="uppercase font-medium text-xl tracking-[5px]">

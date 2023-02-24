@@ -4,19 +4,24 @@ export default function Navbar() {
   const [mobileOpen, setMobileOpen] = useState(false);
   const hamburgerLine = `h-1 w-8 my-1 rounded-full bg-black transition ease transform duration-300`;
   return (
-    <nav className="py-8 sm:pb-10 md:py-12 lg:py-16 px-4 lg:px-8 relative">
+    <nav
+      className="py-8 sm:pb-10 md:py-12 lg:py-16 px-4 lg:px-8 relative"
+      aria-label="Main navigation"
+    >
       <div className="container mx-auto flex flex-row items-center justify-between ">
         <div>
-          <a href="/designo-website/">
+          <a href="/designo-website/" aria-label="Logo link - Home">
             <img
               src="/designo-website/assets/shared/desktop/logo-dark.png"
               className="object-cover h-[27px]"
+              alt="Website dark logo"
             />
           </a>
         </div>
         <button
           onClick={() => setMobileOpen((prev) => !prev)}
           className="flex flex-col h-12 w-12 justify-center items-end group md:hidden"
+          name="Mobile navigation"
         >
           <div
             className={`${hamburgerLine} ${

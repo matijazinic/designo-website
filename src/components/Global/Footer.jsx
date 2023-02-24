@@ -7,14 +7,18 @@ export default function Footer() {
       <div className="bg-[#1D1C1E] px-0 sm:px-4 md:px-8 lg:px-12 -mt-20 pt-40 lg:pt-48 pb-20 relative">
         <div className="container mx-auto flex flex-col gap-10 text-white text-center md:text-left">
           <div className="flex flex-col max-md:items-center lg:items-center md:flex-row md:justify-between ">
-            <a href="/designo-website/">
+            <a href="/designo-website/" aria-label="Logo link - Home">
               <img
                 src="/designo-website/assets/shared/desktop/logo-light.png"
                 className="object-cover h-[27px]"
+                alt="Website light logo"
               />
             </a>
             <hr className="h-px my-10 border-1 border-white/10 w-full px-4 md:hidden" />
-            <nav className="px-4 sm:px-0 flex flex-row items-center justify-between relative">
+            <nav
+              className="px-4 sm:px-0 flex flex-row items-center justify-between relative"
+              aria-label="Main navigation"
+            >
               <div>
                 <ul className="flex flex-col md:flex-row gap-10">
                   <li>
