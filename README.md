@@ -50,6 +50,7 @@ Users should be able to:
 
 - Basic use of Astro and how it can be used to quickly and easily build fast static websites, while still allowing you to use any of your favorite JavaScript frameworks.
 - This was also my first time using TailwindCSS, so I learned some basic usage of that as well. I really like it as it greatly simplifies the part which is most tiresome for many developers, which is writing actual CSS
+- Some of the best accessibility practices so that users on all types of devices can have the best experience browsing the website
 
 ### Continued development
 
