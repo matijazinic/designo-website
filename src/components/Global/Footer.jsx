@@ -17,7 +17,7 @@ export default function Footer() {
             <hr className="h-px my-10 border-1 border-white/10 w-full px-4 md:hidden" />
             <nav
               className="px-4 sm:px-0 flex flex-row items-center justify-between relative"
-              aria-label="Main navigation"
+              aria-label="Main navigation in footer"
             >
               <div>
                 <ul className="flex flex-col md:flex-row gap-10">

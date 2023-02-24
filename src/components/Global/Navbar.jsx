@@ -21,7 +21,7 @@ export default function Navbar() {
         <button
           onClick={() => setMobileOpen((prev) => !prev)}
           className="flex flex-col h-12 w-12 justify-center items-end group md:hidden"
-          name="Mobile navigation"
+          aria-label="Mobile navigation"
         >
           <div
             className={`${hamburgerLine} ${
