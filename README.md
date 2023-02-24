@@ -56,11 +56,6 @@ Users should be able to:
 - Fix all of the background blob images which currently aren't the same as shown on the actual design.
 - There was a bonus challenge of allowing users to view actual locations on the locations page maps, which I didn't feel like doing since it's a fake website and I wasn't sure if I could use some random addresses for it. But maybe in the future, this might be done as well.
 
-### Useful resources
-
-- [Example resource 1](https://www.example.com) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
-- [Example resource 2](https://www.example.com) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
-
 ## Author
 
 - GitHub - [Matija Zinic](https://github.com/matijazinic)
