@@ -2,6 +2,10 @@
 import Footer from "../components/Global/Footer";
 import Navbar from "../components/Global/Navbar";
 
+import '@fontsource/jost/400.css';
+import '@fontsource/jost/500.css';
+import '@fontsource/jost/700.css';
+
 export interface Props {
   title: string;
 }
@@ -19,12 +23,12 @@ const { title } = Astro.props;
       type="image/svg+xml"
       href="/designo-website/favicon-32x32.png"
     />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Jost:wght@400;500;700&display=swap"
       rel="stylesheet"
-    />
+    /> -->
     <meta name="generator" content={Astro.generator} />
     <meta
       name="description"

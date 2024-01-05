@@ -2,7 +2,7 @@ import React from "react";
 
 export default function Hero() {
   return (
-    <div className="px-4 bg-hero-pattern bg-cover bg-brand bg-right sm:rounded-xl grid grid-cols-1 lg:grid-cols-2 container mx-auto">
+    <div className="px-4 my-auto lg:min-h-[640px] bg-hero-pattern bg-cover bg-brand bg-right sm:rounded-xl grid grid-cols-1 lg:grid-cols-2 container mx-auto">
       <div className="text-white flex flex-col gap-12 my-auto px-4 sm:px-8 md:px-16 lg:pl-12 xl:pl-20 2xl:pl-32 lg:pr-0 pt-20 lg:pt-0 text-center lg:text-left">
         <h1 className="text-3xl sm:text-4xl md:text-5xl font-medium ">
           Award-winning custom designs and digital branding solutions
